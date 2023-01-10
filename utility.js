@@ -56,3 +56,17 @@ for(let element of Object.keys(obj)) {
 let obj = { x: 1,};
 library.function(Object.create(obj))
 
+// access a property of an object with the [] array notation
+let addr = ''
+for(let i = 0; i <= 4; i++) {
+  addr += customer[`address${i}`] + "\n";
+}
+
+// The difference between hasOwnProperty and propertyIsEnumerable
+Object.prototype.hasOwnProperty("toString") // => true
+Object.prototype.propertyIsEnumerable("toString") // => false: own property but not enumerable
+
+// The difference between in operator and . property access
+let o = {x: undefined}
+o.x !== undefined; //false,exist but is undefined
+"x" in o; //ture,property exist
