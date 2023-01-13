@@ -70,3 +70,25 @@ Object.prototype.propertyIsEnumerable("toString") // => false: own property but 
 let o = {x: undefined}
 o.x !== undefined; //false,exist but is undefined
 "x" in o; //ture,property exist
+
+// copy and overwrite
+Object.assign(o, default);
+
+// copy but not overwrite
+Object.assign({}, default, o)
+
+// Like Object.assign() but doesn't override existing properties 
+// and also doesn't handle Symbol properties
+// avoid the overhead of the extra object creation and copying
+function merge(target, ...sources) {
+  // get sources
+  for(let source of sources) {
+    // get properties
+    for(let key of Object.keys(source)) {
+      if(!(key in target)) {
+        target[key] = source[key]
+      }
+    }
+  }
+  return target;
+}
