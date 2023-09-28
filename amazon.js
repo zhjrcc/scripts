@@ -9,6 +9,7 @@
 // @grant        none
 // ==/UserScript==
 // Tampermonkey
+// localStorage.wifes =  "S1\nFitch\nプレステージ\nMOODYZ\nSODクリエイト\nMadonna\nアイデアポケット\nTEEN'S CANDY\nビッグモーカル\nアウトビジョン\nグローリークエスト\nディープスDEEPS\nAVScollector\nBAZOOKA\nセレブの友\nクリスタル映像\nラグジュTV×PRESTIGE"
 (function () {
   "use strict";
   window.onload = function () {
