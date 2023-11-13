@@ -28,6 +28,6 @@ let dir1 = "dir/zhjrcc/avatar.jpeg";
 
 let dirSearch = dir1.search(pattern);
 let dirMatch = dir1.match(pattern);
-let dirReplace = dir1.replace(pattern, "dir/$1/月照心头.jpeg");
+let dirReplace = dir1.replace(pattern, "web/$1/月照心头.jpeg");
 
 console.log(dirSearch, dirMatch[1], dirMatch[2], dirReplace); //0 zhjrcc avatar dir/zhjrcc/月照心头.jpeg
