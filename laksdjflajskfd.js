@@ -15,9 +15,7 @@
   let page = document.querySelectorAll(".s-pagination-strip a");
   let last = page[page.length - 1];
   if (last && last.innerText === "下一页") {
-    setTimeout(function () {
-      window.open(last.href, "_parent");
-    }, 2000);
+     setTimeout(function(){window.open(last.href,'_parent')}, 2000);
   } else {
     localStorage.wife = new Date().toLocaleDateString();
   }
@@ -33,12 +31,10 @@
         for (let img of imgs) {
           let src = img.src.replace(/\._AC\S+_/, "");
           src = src.split("/").reverse()[0];
-          if (Number(src[0]) >= 6 || !Number(src[0])) {
-            if (!v.has(src)) {
-              value.add(src);
-            }
-            v.add(src);
+          if (!v.has(src)) {
+            value.add(src);
           }
+          v.add(src);
         }
         localforage.setItem("allWife", Array.from(v));
         localforage.setItem("wife", Array.from(value));
