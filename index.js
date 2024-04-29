@@ -1,5 +1,1 @@
-function a(){console.log('click 1')}
-function b(){console.log('click 1')}
-let title = document.querySelector('#title')
-title.addEventListener('click', a)
-title.addEventListener('click', b)
+https://www.amazon.co.jp/s?i=software&rh=n%3A896246%2Cp_n_binding_browse-bin%3A644356011&dc&language=zh&ds=v1%3Ae2y4W%2BVtGXgdbfez3C5r75N8N2WK9FTmyzgMO%2BWWEKc&__mk_zh_CN=%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%BD%91%E7%AB%99&crid=2JRZTD21R5CNC&qid=1705719111&rnid=622811011&sprefix=jufe%2Csoftware%2C557&ref=sr_nr_p_n_binding_browse-bin_1
